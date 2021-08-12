@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/Valley-day.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 30px;
+}
+
+.search {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.search button {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: .2s ease;
+}
+
+.search button:hover,
+.search button:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-bar {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::placeholder {
+    color: #999;
+}
+
+.weather {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.city {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.temp {
+    font-size: 54px;
+}
+
+.description-wrapper {
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.description {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.description-img {
+    margin-left: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.description-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.humidity,
+.wind {
+    font-size: 20px;
+}
