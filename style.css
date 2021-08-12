@@ -111,3 +111,19 @@ body {
 .wind {
     font-size: 20px;
 }
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
